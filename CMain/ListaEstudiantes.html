@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaEstudiantes
+    </title>
+    <link rel="stylesheet" href="../syles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logoicono.png">
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="divHeader">
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+        </div>
+        <div class="header2">
+            <div>
+            <img src="../img/Logoheader.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+            </div>
+            <a href="./Notificaciones.html"><i class="fa-solid fa-bell"></i> Notificaciones</a>
+            <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
+        </div>
+    </header>
+  <main>
+    <section class="sectionTitulo">
+    <div class="divTitulo">
+      Estudiantes
+    </div>  
+</section>
+
+    <section class="vLista">
+     <button class="volv" onclick="redirigir06()"><a href="./GestionA.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+    </section>
+    
+        <div id="search" class="buscar">
+            <label for="searchInput"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input id="searchInput" type="text" placeholder="Buscar">
+    </div>
+    <div class="listaEst">
+    <select name="opcion" id="help" >
+        <option value="0" selected>Programa</option>
+        <option value="1">ADMINISTRACIÓN DE EMPRESAS</option>
+        <option value="">CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
+        <option value="">DISEÑO DE PRODUCTO</option>
+        <option value="">FINANZAS Y COMERCIO EXTERIOR</option>
+        <option value="">INGENIERÍA DE SOFTWARE</option>
+        <option value="">INGENIERÍA INDUSTRIAL</option>
+        <option value="">MARKETING Y LOGÍSTICA</option>
+        <option value="">NEGOCIOS INTERNACIONALES</option>
+    </select>
+    <select name="opcion">
+        <option value="0" selected>Semestre</option>
+        <option value="">Segundo</option>
+        <option value="">Tercero</option>
+        <option value="">Cuarto</option>
+        <option value="">Quinto</option>
+        <option value="">Sexto</option>
+        <option value="">Septimo</option>
+    </select>
+    <select name="opcion">
+        <option value="0" selected>Fase</option>
+        <option value="">Aula</option>
+      <option value="">Empresa</option>
+        <option value="">En proceso</option>
+    </select>
+    
+      </div>
+    <table class="tablaEstudiantes">
+    <tr>
+      <th>Nombre</th>
+      <th>Identificación</th>
+      <th>Programa</th>
+      <th>Semestre</th>
+      <th>Promoción</th>
+      <th>Fase</th>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Cristian Mauricio Guasca Gutierrez</td>
+        <td>1021512598</td>
+        <td>Administración de Empresas</td>
+        <td>Segundo</td>
+        <td>(Promoción, periodo)</td>
+        <td>Aula</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Ana Maria Castillo Garzon</td>
+        <td>2127928</td>
+        <td>Contaduría</td>
+        <td>Tercero</td>
+        <td>(Promoción, periodo)</td>
+        <td>Empresa</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Lina Marcela Cruz Molina</td>
+        <td>1412205</td>
+        <td>Diseño de producto</td>
+        <td>Cuarto</td>
+        <td>(Promoción, eriodo)</td>
+        <td>Empresa</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Carol Michell Morales Guerrero</td>
+        <td>261120548</td>
+        <td>Finanzas y comercio exterior</td>
+        <td>Quinto</td>
+        <td>(Promoción, periodo)</td>
+        <td>Aula</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Santiago Joya Medina</td>
+        <td>270820954</td>
+        <td>Ing. Software</td>
+        <td>Sexto</td>
+        <td>(Promociónp, Periodo)</td>
+        <td>Aula</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Laura Valentina Bustos</td>
+        <td>241220598</td>
+        <td>Ing. Industrial</td>
+        <td>Septimo</td>
+        <td>(Promoción, Periodo)</td>
+        <td>Empresa</td>
+    </tr>
+    <tr class="name"  onclick="redirigir14()">
+        <td>Paula Andrea Herrera</td>
+        <td>598206061</td>
+        <td>Marketing y logística</td>
+        <td>Cuarto</td>
+        <td>(Promoción, periodo)</td>
+        <td>Aula</td>
+    </tr>
+    </table>
+      </main>
+    <footer>
+        <div class="footer1">
+            <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
+        </div>
+        <div class="footer2">
+            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+    <script src="../Scripts/Redirigir.js"></script>
+    <script src="../Scripts/Search.js"></script>
+</body>
+</html>

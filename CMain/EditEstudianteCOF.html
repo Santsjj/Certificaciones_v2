@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiante</title>
+    <link rel="stylesheet" href="../syles/styles.css">
+    <link rel="stylesheet" href="../syles/syles.css">
+    <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
+    sizes="192x192" />
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="divHeader">
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+        </div>
+        <div class="header2">
+            <div class="imagenesHeader">
+            <img src="../img/Logoheader.png" alt="Logo Uniempresarial y logo camara de comercio">
+            </div>
+            <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+        </div>
+    </header>
+  <main>
+    <section id="form">
+      <section class="parte1">
+        <div class="cog">
+          <div>
+        <label for="estado">Estado: </label>
+        <select id="estado">
+            <option>Contactar con Empresa</option>
+            <option>Pendiente envio hoja de vida</option>
+            <option>Hoja de vida Enviadas</option>
+            <option>Entrevistas Programadas</option>
+            <option>Entrevistas Realizadas</option>
+            <option>Estudiante Seleccionado</option>
+        </select>
+          </div>
+        <button class="bHistorial"><a href="./HistorialP.html">Historial proceso coformación</a></button>
+        
+         <button class="volver" onclick="redirigir06()"><a href="./EstudianteCOF.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+        </div>
+          </section>
+       <section class="infEmpEdit">
+        <section>
+        <img src="../img/placeh.png" class="img" alt="logo">
+      </section>
+        <div>
+        <label for="name_empresa">Nombre empresa</label>
+        <input id="name_empresa" type="text" required>
+          <br>
+        <label for="info_empresa">Información empresa:</label><br>
+          <input id="info_empresa" type="text" class="inputInf">
+        </div>
+      </section>
+      <section class="editNit">
+        <div>
+     <label for="nit_empresa">NIT:</label>
+       <input id="nit_empresa" type="number" required>
+        </div>
+       <div>
+        <label for="code_vrfcn">Código de verificación:</label>
+       <input id="code_vrfcn" type="number" required >
+       </div>
+       </section>
+        <h3 class="subT">Contacto Empresa</h3>
+      <section class="infContactoEdit">
+        <section >
+        <label for="name_contacto">Nombre Contacto:</label>
+          <input id="name_contacto" type="text" required><br><br>
+        <label for="cargo_contacto">Cargo: </label>
+          <input id="cargo_contacto" type="text" required>
+        </section>
+        <section>
+        <label for="correo1_contacto">Correo 1:</label>
+          <input id="correo1_contacto" type="email" required><br><br>
+        <label for="correo2_contacto">Correo 2:</label>
+          <input id="correo2_contacto" type="email">
+        </section>
+        <section>
+        <label for="celular_contacto">Celular:</label>
+          <input id="celular_contacto" type="tel" required><br><br>
+        <label for="telef_contacto">Fijo:</label>
+          <input id="telef_contacto" type="tel">
+        </section>
+      </section>
+      <h3 class="subT">Tipo de Vinculación</h3>  
+      <section class="vincuEdit">
+        <section>
+        <label>Tipo de contrato:</label>
+          <input id="TipoVin1" type="radio" name="vinc">Sena
+        <input id="TipoVin2" type="radio" name="vinc">Formativo<br><br>
+        <label for="time_contrato">Tiempo Contrato:</label>
+           <input id="time_contrato" type="text"><br><br>
+        <label>Sostenimiento o sueldo:</label>
+          <input id="sos_suel1" type="radio" name="sos">Si
+        <input id="sos_suel2" type="radio" name="sos">No
+      </section>
+        <section>
+        <label for="cantsld">Cantidad:</label>
+          <input id="cantsld" type="number"><br><br>
+        <label for="prd_pago">Perioridad de Pago:</label>
+          <input id="prd_pago" type="text"><br><br>
+        <label for="frm_pago">Forma de Pago:</label>
+        <input id="frm_pago" type="text">
+          
+        </section>
+        <section>
+        <label for="horario">Horario</label>
+        <input id="horario" type="text">
+          </section>
+        </section>
+      <h3 class="subT">Tutor Encargado</h3>
+      <section class="infContacto">
+        <section>
+        <label for="name_tutor">Nombre Tutor:</label>
+          <input id="name_tutor" type="text" required><br><br>
+        <label for="cargo_tutor">Cargo:</label>
+          <input id="cargo_tutor" type="text" required>
+        </section>
+        <section>
+        <label for="correo_tutor">Correo:</label>
+          <input id="correo_tutor" type="email" required><br><br>
+        <label for="celular_tutor">Celular:</label>
+          <input id="celular_tutor" type="tel" required>
+        </section>
+      </section> 
+        <h3 class="subT">Docente de acompañamiento</h3>
+      <section class="infContacto">
+        <section>
+        <label for="name_docente">Nombre Docente:</label>
+          <input id="name_docente" type="text" required><br>
+        <label for="docint_docente">C.C:</label>
+          <input id="docint_docente" type="number" required>
+      </section>
+        <section>
+        <label for="email_docente">Correo Institucional:</label>
+          <input id="email_docente" type="email" required><br>
+        <label for="celu_docente">Celular:</label>
+          <input id="celu_docente" type="tel" required>
+        </section>
+      </section>
+      <div class="tEsc">
+        <label for="isemestre">Semestre:</label>
+        <select id="isemestre" > 
+        <option selected >Semestre</option>
+        <option>Primero</option>
+        <option>Segundo</option>
+        <option>Tercero</option>
+        <option>Cuarto</option>
+        <option>Quinto</option>
+        <option>Sexto</option>
+        <option>Septimo</option>
+        </select>
+        <h4>Fecha proceso coformación:</h4>
+        <label for="fecha_inicio">Fecha Inicio:</label>
+        <input id="fecha_inicio" type="date" required>
+        <label for="fecha_fin">Fecha Fin:</label>
+        <input id="fecha_fin" type="date">
+      </div>
+      <br>
+    </section>
+    <button class="guardarCof">Guardar</button>
+      </main>
+    <footer>
+        <div class="footer1">
+            <img src="../img/logoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
+        </div>
+        <div class="footer2">
+            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+    <script src="../Scripts/Redirigir.js"></script>
+    <script src="../Scripts/EditEstdCOF.js"></script>
+</body>
+</html>
